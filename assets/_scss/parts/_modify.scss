@@ -1,0 +1,36 @@
+.button.button-primary, 
+button.button-primary, 
+input[type="submit"].button-primary, 
+input[type="reset"].button-primary, 
+input[type="button"].button-primary {
+  background-color: $green;
+  border: none;
+}
+.button, 
+button, 
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+  height: 45px;
+  color: $violet !important;
+  font-size: 16px;
+  line-height: 45px;
+  border-radius: 45px;
+  transition: all 0.4s ease 0s;
+}
+.button.button-primary:hover, 
+button.button-primary:hover, 
+input[type="submit"].button-primary:hover, 
+input[type="reset"].button-primary:hover, 
+input[type="button"].button-primary:hover, 
+.button.button-primary:focus,
+button.button-primary:focus, 
+input[type="submit"].button-primary:focus, 
+input[type="reset"].button-primary:focus, 
+input[type="button"].button-primary:focus {
+  background-color: $green;
+  -webkit-box-shadow: 0px 4px 30px -12px rgb(91, 191, 164);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
