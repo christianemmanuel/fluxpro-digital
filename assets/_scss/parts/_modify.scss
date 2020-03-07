@@ -34,3 +34,20 @@ input[type="button"].button-primary:focus {
   box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
+
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="text"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="password"], 
+textarea, select {
+  height: 48px;
+  background-color: transparent;
+}
+label {
+  font-weight: 400;
+  color: #6eca97;
+  font-size: 16px;
+}

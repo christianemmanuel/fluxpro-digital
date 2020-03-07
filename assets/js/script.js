@@ -6,9 +6,10 @@ $(document).ready(function() {
   var scrollTop = $(window).scrollTop();
 
   if (scrollTop > stickyNavTop) { 
-    $('.sticky-navbar').addClass('sticky');
+    $('body').addClass('sticky');
   } else {
-    $('.sticky-navbar').removeClass('sticky'); 
+    $('body').removeClass('sticky');
+    $('.navbar-list').removeAttr('style');
   }
   };
 
@@ -37,20 +38,20 @@ $(document).ready(function() {
 
   $('.tesimonials-detail').slick({
     infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: false,
     arrows: false,
     responsive: [
       {
-        breakpoint: 970,
+        breakpoint: 971,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 481,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -65,17 +66,36 @@ $(document).ready(function() {
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 970,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 481,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('.process-list').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: true
         }
       }
     ]
@@ -107,4 +127,31 @@ $(document).ready(function() {
     
     return false;
   });
+
+  $('.navbar-toggle').click(function() {
+    $('.navbar-list').slideToggle('fast');
+  });
+
+  // $('#submitForm').click(function() {
+  //   $.removeCookie('hide-after-click');
+  // });
+  
+  // setTimeout(function() {
+  //   $('.alert').remove();
+  // }, 3500);
+
+  // $('#close').click(function() {
+  //   if (!$('.alert').is('hide-alert')) {
+  //     $('.alert').addClass('hide-alert');
+
+  //     $.cookie('hide-after-click', 'yes', {expires: null });
+  //   }
+  //   return false;
+  // });
+
+  // if ($.cookie('hide-after-click') == 'yes') {
+  //   $('.alert').addClass('hide-alert');
+  // }
+
+  // $.cookie('hide-after-click', 'yes', {expires: null });
 });
