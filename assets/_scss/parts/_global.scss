@@ -411,6 +411,10 @@ footer.main-footer {
     }
   }
 }
+.about-us-container {
+  position: relative;
+  z-index: 1;
+}
 .about-us-detail {
   max-width: 700px;
   p {
@@ -418,11 +422,12 @@ footer.main-footer {
     margin-bottom: 1.7rem;
   }
 }
-.about-us {
+img.about-us {
   max-width: 480px;
   position: absolute;
   bottom: -5px;
   right: 10px;
+  opacity: 0.8;
 }
 
 .cta-schedule-video-call {
@@ -731,7 +736,26 @@ footer.main-footer {
   .what-we-do-wrapper {
     margin-top: 15px;
   }
-  
+  .basic-package-container {
+    grid-template-columns: 1fr;
+  }
+  img.about-us {
+    max-width: 380px;
+    opacity: 0.5;
+  }
+  .about-us-detail {
+    h1 {
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 19px;
+      margin-bottom: 1.3rem;
+    }
+  }
+  .portfolio-filter-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media only screen and (max-width: 667px) {
@@ -779,6 +803,32 @@ footer.main-footer {
     height: 50px;
     background-size: 50px;
   }
+  .pt-150 {
+    padding-top: 120px !important;
+  }
+  .global-section {
+    padding: 70px 0;
+  }
+  .portfolio-filter-container {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-filter-nav ul li a {
+    padding: 7px 8px;
+    font-size: 15px;
+  }
+  .leonardo-quote-wrapper {
+    margin-top: 60px;
+  }
+  .contact-img-1 {
+    max-width: 300px;
+  }
+  .img-bg {
+      opacity: 0.5;
+  }
+  .contact-form-img .contact-img-2 {
+    opacity: 0.5;
+    max-width: 70%;
+  }
 }
 
 
@@ -824,5 +874,19 @@ footer.main-footer {
     bottom: 35px;
     background-size: 15px;
   }
-  
+  .about-us-detail {
+    p {
+      font-size: 18px;
+    }
+  }
+  img.about-us {
+    max-width: 340px;
+    opacity: 0.5;
+  }
+  .portfolio-filter-nav ul li a {
+    font-size: 14px;
+  }
+  .contact-forms-group {
+    top: -80px;
+  }
 }

@@ -127,7 +127,7 @@ if(isset($_POST['submit']))
           </div>
         </div>
         
-        <div class="contact-forms-group">
+        <div class="contact-forms-group" id="contactUs">
           <div class="contact-forms-detail">
             <div class="text-right">
               <h2 class="mb-0">SEND US A MESSAGE</h2>
